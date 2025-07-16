@@ -1,0 +1,14 @@
+name: slipstream
+recipe: laravel
+config:
+  webroot: src/public
+  php: "8.2"
+  composer_version: 2-latest
+services:
+  myservice:
+    type: node:14
+tooling:
+  node:
+    service: myservice
+  npm:
+    service: myservice
